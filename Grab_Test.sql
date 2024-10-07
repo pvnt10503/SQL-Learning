@@ -8,12 +8,12 @@ CREATE TABLE Candidates
 );
 insert into Candidates VALUES
   --Test case 1
- /* (1, 'Senior', 10000),  -- Acceptable
+  (1, 'Senior', 10000),  -- Acceptable
     (2, 'Senior', 40000),  -- Acceptable
     (3, 'Senior', 30000),  -- Exceeds budget
     (4, 'Junior', 20000),  -- Remaining budget is low, can't hire this junior
     (5, 'Junior', 5000),   -- Acceptable (depending on the remaining budget after seniors)
-    (6, 'Junior', 5000);*/
+    (6, 'Junior', 5000);
 --Main case
     (1, 'Junior', 10000),
     (9, 'Junior', 10000),
@@ -22,19 +22,19 @@ insert into Candidates VALUES
     (13, 'Senior', 50000),
     (4, 'Junior', 40000);
 --Test case 2
- /*(1, 'Senior', 10000),
+ (1, 'Senior', 10000),
     (2, 'Senior', 30000),
     (3, 'Senior', 30000),
     (4, 'Junior', 5000),
     (5, 'Junior', 5000),
-    (6, 'Junior', 15000);*/
+    (6, 'Junior', 15000);
 --Test case 3
-  /* (1, 'Senior', 25000),
+   (1, 'Senior', 25000),
     (2, 'Senior', 25000),
     (3, 'Senior', 30000),
     (4, 'Junior', 15000),
     (5, 'Junior', 15000),
-    (6, 'Junior', 10000);*/
+    (6, 'Junior', 10000);
 select * from candidates
 
 truncate table candidates
