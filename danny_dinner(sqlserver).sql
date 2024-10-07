@@ -1,9 +1,8 @@
-
-create table sales (
-    "customer_id" varchar(1),
+/*create table sales (
+    "customer_id" varchar(1) not null,
     "order_date" date,
-    "product_id" int
-);
+    "product_id" int not null
+);*/
 insert into sales values
     ('A', '2021-01-01', '1'),
     ('A', '2021-01-01', '2'),
@@ -20,27 +19,23 @@ insert into sales values
     ('C', '2021-01-01', '3'),
     ('C', '2021-01-01', '3'),
     ('C', '2021-01-07', '3');
-create table menu (
-    "product_id" int, 
+/*create table menu (
+    "product_id" int not null primary key, 
     "product_name" varchar(5), 
     "price" int
-    );
+    );*/
 insert into menu values 
     (1,'sushi',10),
     (2,'curry',15),
     (3,'ramen',12);
 
-create table members (
-    "customer_id" varchar(1),
+/*create table members (
+    "customer_id" varchar(1) not null primary key,
     "join_date" date
-    );
+    );*/
  insert into members values
         ('A','2021-01-07'),
         ('B','2021-01-09');
-select * from menu
-select * from sales
-
-
 /* --------------------
    Case Study Questions
    --------------------*/
