@@ -2,8 +2,8 @@
 /* How to create a fake database using WHILE LOOP 
 */
 CREATE DATABASE NotRealData;
-create schema marketing;
-drop schema marketing;
+--create schema marketing;
+--drop schema marketing;
 create table sales_advertising (
     "Date" Date,
     "Tiktok" float,
@@ -38,6 +38,9 @@ BEGIN
   )
   set @day_start = @day_start - 1;
 END;
+/*
+ì
+*/
 select * from sales_advertising
 /*WHILE LOOP Syntax:
 While clear condition
